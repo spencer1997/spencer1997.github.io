@@ -159,16 +159,16 @@
 
     <div class="post-list-item article">
       <h3 class="article-header">
-        <a href="/2021/01/17/%E6%81%AC%E4%B8%8D%E7%9F%A5%E8%80%BB%E7%9A%84%E5%B0%9D%E8%AF%95%E5%86%99%E4%BA%86%E4%B8%AAFATE%E6%96%87%E6%A1%A3/" >
-  恬不知耻地写了个FATE文档
+        <a href="/2021/01/20/%E6%81%AC%E4%B8%8D%E7%9F%A5%E8%80%BB%E7%9A%84%E5%B0%9D%E8%AF%95%E5%86%99%E4%BA%86%E4%B8%AAFATE%E6%96%87%E6%A1%A3.md/" >
+  
 </a>
 
       </h3>
       
 
       <div class="article-info">
-        <a href="/2021/01/17/%E6%81%AC%E4%B8%8D%E7%9F%A5%E8%80%BB%E7%9A%84%E5%B0%9D%E8%AF%95%E5%86%99%E4%BA%86%E4%B8%AAFATE%E6%96%87%E6%A1%A3/"><span class="article-date">
-  2021-01-17
+        <a href="/2021/01/20/%E6%81%AC%E4%B8%8D%E7%9F%A5%E8%80%BB%E7%9A%84%E5%B0%9D%E8%AF%95%E5%86%99%E4%BA%86%E4%B8%AAFATE%E6%96%87%E6%A1%A3.md/"><span class="article-date">
+  2021-01-20
 </span>
 </a>
         
@@ -178,361 +178,141 @@
       </div>
       <div class="article-entry">
         
-          <p><strong>恬不知耻的尝试写了个FATE文档</strong></p>
+          <p>恬不知耻的尝试写了个FATE文档</p>
+<blockquote>
 <p>欢迎加入平行智慧医疗算法团队！！</p>
+</blockquote>
 <p>欢迎你加入我们的大家庭！这里将会简单介绍项目情况，并列明你需要做的一些事情，帮助你更快地融入公司与团队！</p>
-<p>在阅读本文档之前，墙裂建议先通读一遍FATE框架的github官方文档</p>
-<p>**一、一些可知可不知的基础知识<br>**</p>
-<p><strong>1.啥是联邦学习（点我）？</strong></p>
+<p>在阅读本文档之前，墙裂建议先通读一遍FATE框架的<a target="_blank" rel="noopener" href="https://github.com/FederatedAI">github官方文档</a></p>
+<h1 id="一、一些可知可不知的基础知识"><a href="#一、一些可知可不知的基础知识" class="headerlink" title="一、一些可知可不知的基础知识"></a>一、一些可知可不知的基础知识</h1><blockquote>
+<p><strong>1.啥是<a target="_blank" rel="noopener" href="https://blog.csdn.net/cao812755156/article/details/89598410">联邦学习</a>（点我）？</strong></p>
+</blockquote>
+<blockquote>
 <p><strong>2.啥是FATE？</strong></p>
+</blockquote>
 <p>FATE（联合AI技术使能器）是微众银行AI部门发起的开源项目，为联邦学习生态系统提供可靠的安全计算框架。FATE项目使用多方安全计算（MPC）以及同态加密（HE）技术改造安全计算协议，从而支持不同种类的机器学习的安全计算，包括逻辑回归，基于树的算法，深度学习和迁移学习等。</p>
 <p><a target="_blank" rel="noopener" href="https://github.com/FederatedAI/DOC-CHN">GITHUB链接</a></p>
+<blockquote>
 <p><strong>3.通信中的密码学（自行查阅）</strong></p>
-<p><strong>4.有啥教学资源吗？（没有………………….是不可能的，B站可查，</strong><a target="_blank" rel="noopener" href="https://github.com/FederatedAI/FATE/tree/master/doc"><strong>论文</strong></a><strong>）</strong></p>
-<p>**二、安装FATE<br>**</p>
+</blockquote>
+<blockquote>
+<p><strong>4.有啥教学资源吗？（没有………………….是不可能的，<a target="_blank" rel="noopener" href="https://space.bilibili.com/73414544/channel/detail?cid=109238">B站可查</a>，<a target="_blank" rel="noopener" href="https://github.com/FederatedAI/FATE/tree/master/doc">论文</a>）</strong></p>
+</blockquote>
+<h1 id="二、安装FATE"><a href="#二、安装FATE" class="headerlink" title="二、安装FATE"></a>二、安装FATE</h1><blockquote>
 <p>尽管github文档已经描述的很详细了，但初次接触的小白还是会踩到很多的坑（比如我，大部分问题还是出现在某些工具的版本问题和权限问题，不过根据提示操作现在基本妥当了）</p>
+</blockquote>
+<blockquote>
 <p>FATE有多重部署方式，单机和多机，下面将介绍如何利用我们的设备（114.115.203.93单机，192.168.0.46和192.168.3.101多机）正确安装FATE</p>
-<p><strong>单机部署（114.115.203.93）</strong></p>
-<p>两种方式：</p>
+</blockquote>
+<blockquote>
+</blockquote>
+<h2 id="1-单机部署（114-115-203-93）"><a href="#1-单机部署（114-115-203-93）" class="headerlink" title="1. 单机部署（114.115.203.93）"></a>1. 单机部署（114.115.203.93）</h2><p>两种方式：</p>
 <p>1.主机部署（操作简单）</p>
 <p>2.docker部署（没必要，主机部署可以完美运行）</p>
 <p>提示：先检查端口是否被占用（8080，9360，9380）</p>
 <p><a target="_blank" rel="noopener" href="https://github.com/FederatedAI/DOC-CHN/blob/master/%E9%83%A8%E7%BD%B2/FATE%E5%8D%95%E6%9C%BA%E9%83%A8%E7%BD%B2%E6%8C%87%E5%8D%97.rst">详细方法见官方教程</a></p>
 <p>注意：文档中出现如下方法需修改，查看看板（fateboard）需先链接服务器8080端口（mobaxterm），并打开网址：127.0.0.1:8080或者localhost:8080</p>
-<p><img src="media/971b75582d9435c467a8d56ed7de1b68.png" alt="Generated"></p>
-<p><strong>多机部署（集群kubefate192.168.0.46和192.168.3.101）</strong></p>
-<p>三种方式：</p>
+<p><img src="https://smarthealth2019.feishu.cn/space/api/box/stream/download/asynccode/?code=MWJkMzFiYjE2M2E3YzAwMDlhY2Q0MWE0YzA0YzA1N2FfWG0xeVZoYVBabm5jZ0FjOGRKOERWUHZOOTg4dG1heEdfVG9rZW46Ym94Y25ybzRVRlh5bVFFbWUzbEVxQjVlbTJMXzE2MTExMzM5ODg6MTYxMTEzNzU4OF9WNA" alt="img"></p>
+<h2 id="2-多机部署（集群kubefate192-168-0-46和192-168-3-101）"><a href="#2-多机部署（集群kubefate192-168-0-46和192-168-3-101）" class="headerlink" title="2. 多机部署（集群kubefate192.168.0.46和192.168.3.101）"></a>2. 多机部署（集群kubefate192.168.0.46和192.168.3.101）</h2><p>三种方式：</p>
 <p>1.主机部署（很麻烦，感兴趣自行踩坑）</p>
 <p>2.docker-compose（自动部署<strong>一个或多个</strong>docker容器的管理配置工具，没错开始用docker了）</p>
 <p>3.k8s（大集群部署，同样没必要）</p>
 <p>所以下面介绍第二种部署方式docker-compose的必要细节</p>
-<p>1.<a target="_blank" rel="noopener" href="https://github.com/FederatedAI/KubeFATE/tree/master/docker-deploy">官方安装操作文档</a><br>docker基本操作不在赘述，详情，<a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/61905533">进阶教程</a></p>
+<p>1.<a target="_blank" rel="noopener" href="https://github.com/FederatedAI/KubeFATE/tree/master/docker-deploy">官方安装操作文档</a>   docker基本操作不在赘述，<a target="_blank" rel="noopener" href="http://www.ruanyifeng.com/blog/2018/02/docker-tutorial.html">详情</a>，<a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/61905533">进阶教程</a></p>
 <p>2.注意：</p>
 <p>1）安装前一定要确保三个端口（8080，9360，9380）没有被占用，集群和单机部署会占用相同的端口，所以安装集群时，需先卸载或者关闭单机部署的进程（关闭占用端口的进程）</p>
 <p>2）github文档中的细节，如图</p>
-<p><img src="media/fe9a7dda71553a8972c00f35cfa347e8.png" alt="Generated"></p>
+<p><img src="https://smarthealth2019.feishu.cn/space/api/box/stream/download/asynccode/?code=ODMwZDE1YjNhOTEzNDViZmVmZmY2NzQzNjc3MDhlMjNfWlozUGFQTHNVb21lNk15dm9KQU02aTZhbmh4SjlaRElfVG9rZW46Ym94Y25rWmpHUXMwUjJ0ckF4UGxtYVB3U0NoXzE2MTExMzM5ODg6MTYxMTEzNzU4OF9WNA" alt="img"></p>
 <p>切记partylist的id，在部署成功之后不要改，否则报错需要重新部署</p>
 <p>3）<strong>（敲黑板）确保机器相互之间能ssh通</strong></p>
 <p>然后才能执行这一步</p>
-<p><img src="media/c785872174bb7275e12d8392ba1473a0.png" alt="Generated"></p>
+<p><img src="https://smarthealth2019.feishu.cn/space/api/box/stream/download/asynccode/?code=ZjlhY2JkZDY3YWZiMjVkNGI2MDEwMGQxOTFhMjQ3ODdfd1ozQmx4RTFvcmVuZGxVR2RvMVo0Tk8ybmVyT0pjS01fVG9rZW46Ym94Y25QYlFZU1JINUV4eUlISUR3NGhmc2ZWXzE2MTExMzM5ODg6MTYxMTEzNzU4OF9WNA" alt="img"></p>
 <p>最后执行 docker ps -a查看运行的容器，差不多11个容器正在运行</p>
 <p>以上就是安装FATE的常规操作，<strong>切记！！</strong>一定要按照github上的文档进行安装！！上面的版本为最新</p>
-<p><strong>三、简单运行FATE</strong></p>
+<h1 id="三、简单运行FATE"><a href="#三、简单运行FATE" class="headerlink" title="三、简单运行FATE"></a>三、简单运行FATE</h1><blockquote>
 <p>刚刚装完FATE的我们感觉自己大功告成了，直到真正运行FATE我们才发现蜡笔小新（lbxx）的大门都没进</p>
+</blockquote>
 <p>开始github上的文档写的乱七八糟（更新版本后有改进），我们只能一步一步乱改，发现其实文档里很多步骤都可以省略。下面就是最精简的流程叙述，<strong>单机版本！！！</strong><a target="_blank" rel="noopener" href="https://github.com/FederatedAI/KubeFATE/tree/master/docker-deploy">改进后的官方文档</a></p>
 <p>首先要提及的就是fate_flow_client.py这个文件，这个python文件无所不能</p>
 <p>运行FATE的命令结构就是，python + client.py文件 + -标识 + 名称（如下）</p>
-<ol>
-<li><p> ‘-c’, ‘–config’, required=False, type=str, help=”runtime conf path”)</p>
-</li>
-<li><p> ‘-d’, ‘–dsl’, required=False, type=str, help=”dsl path”)</p>
-</li>
-<li><p> ‘-f’, ‘–function’, type=str,</p>
-</li>
-<li><p> ‘-j’, ‘–job_id’, required=False, type=str, help=”job id”)</p>
-</li>
-<li><p> ‘-p’, ‘–party_id’, required=False, type=str, help=”party id”)</p>
-</li>
-<li><p> ‘-r’, ‘–role’, required=False, type=str, help=”role”)</p>
-</li>
-<li><p> ‘-cpn’, ‘–component_name’, required=False, type=str, help=”component name”)</p>
-</li>
-<li><p> ‘-s’, ‘–status’, required=False, type=str, help=”status”)</p>
-</li>
-<li><p> ‘-n’, ‘–namespace’, required=False, type=str, help=”namespace”)</p>
-</li>
-<li><p>‘-t’, ‘–table_name’, required=False, type=str, help=”table name”)</p>
-</li>
-<li><p>‘-w’, ‘–work_mode’, required=False, type=int, help=”work mode”)</p>
-</li>
-<li><p>‘-i’, ‘–file’, required=False, type=str, help=”file”)</p>
-</li>
-<li><p>‘-o’, ‘–output_path’, required=False, type=str, help=”output_path”)</p>
-</li>
-<li><p>‘-m’, ‘–model’, required=False, type=str, help=”TrackingMetric model id”)</p>
-</li>
-<li><p>‘-drop’, ‘–drop’, required=False, type=str, help=”drop data table”)</p>
-</li>
-<li><p>‘-limit’, ‘–limit’, required=False, type=int, help=”limit number”)</p>
-</li>
-<li><p>‘-verbose’, ‘–verbose’, required=False, type=int, help=”number 0 or 1”)</p>
-</li>
-<li><p>‘-src_party_id’, ‘–src_party_id’, required=False, type=str, help=”src party<br>id”)</p>
-</li>
-<li><p>‘-src_role’, ‘–src_role’, required=False, type=str, help=”src role”)</p>
-</li>
-<li><p>‘-privilege_role’, ‘–privilege_role’, required=False, type=str,<br>help=”privilege role”)</p>
-</li>
-<li><p>‘-privilege_command’, ‘–privilege_command’, required=False, type=str,<br>help=”privilege command”)</p>
-</li>
-<li><p>‘-privilege_component’, ‘–privilege_component’, required=False, type=str,<br>help=”privilege component”)</p>
-</li>
-<li><p><strong>部署环境</strong></p>
-</li>
-</ol>
-<p>很重要，作用是配置系统临时目录和变量，关闭占用进程等等</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">&#39;-c&#39;, &#39;--config&#39;, required&#x3D;False, type&#x3D;str, help&#x3D;&quot;runtime conf path&quot;)</span><br><span class="line">&#39;-d&#39;, &#39;--dsl&#39;, required&#x3D;False, type&#x3D;str, help&#x3D;&quot;dsl path&quot;)</span><br><span class="line">&#39;-f&#39;, &#39;--function&#39;, type&#x3D;str,</span><br><span class="line">&#39;-j&#39;, &#39;--job_id&#39;, required&#x3D;False, type&#x3D;str, help&#x3D;&quot;job id&quot;)</span><br><span class="line">&#39;-p&#39;, &#39;--party_id&#39;, required&#x3D;False, type&#x3D;str, help&#x3D;&quot;party id&quot;)</span><br><span class="line">&#39;-r&#39;, &#39;--role&#39;, required&#x3D;False, type&#x3D;str, help&#x3D;&quot;role&quot;)</span><br><span class="line">&#39;-cpn&#39;, &#39;--component_name&#39;, required&#x3D;False, type&#x3D;str, help&#x3D;&quot;component name&quot;)</span><br><span class="line">&#39;-s&#39;, &#39;--status&#39;, required&#x3D;False, type&#x3D;str, help&#x3D;&quot;status&quot;)</span><br><span class="line">&#39;-n&#39;, &#39;--namespace&#39;, required&#x3D;False, type&#x3D;str, help&#x3D;&quot;namespace&quot;)</span><br><span class="line">&#39;-t&#39;, &#39;--table_name&#39;, required&#x3D;False, type&#x3D;str, help&#x3D;&quot;table name&quot;)</span><br><span class="line">&#39;-w&#39;, &#39;--work_mode&#39;, required&#x3D;False, type&#x3D;int, help&#x3D;&quot;work mode&quot;)</span><br><span class="line">&#39;-i&#39;, &#39;--file&#39;, required&#x3D;False, type&#x3D;str, help&#x3D;&quot;file&quot;)</span><br><span class="line">&#39;-o&#39;, &#39;--output_path&#39;, required&#x3D;False, type&#x3D;str, help&#x3D;&quot;output_path&quot;)</span><br><span class="line">&#39;-m&#39;, &#39;--model&#39;, required&#x3D;False, type&#x3D;str, help&#x3D;&quot;TrackingMetric model id&quot;)</span><br><span class="line">&#39;-drop&#39;, &#39;--drop&#39;, required&#x3D;False, type&#x3D;str, help&#x3D;&quot;drop data table&quot;)</span><br><span class="line">&#39;-limit&#39;, &#39;--limit&#39;, required&#x3D;False, type&#x3D;int, help&#x3D;&quot;limit number&quot;)</span><br><span class="line">&#39;-verbose&#39;, &#39;--verbose&#39;, required&#x3D;False, type&#x3D;int, help&#x3D;&quot;number 0 or 1&quot;)</span><br><span class="line">&#39;-src_party_id&#39;, &#39;--src_party_id&#39;, required&#x3D;False, type&#x3D;str, help&#x3D;&quot;src party id&quot;)</span><br><span class="line">&#39;-src_role&#39;, &#39;--src_role&#39;, required&#x3D;False, type&#x3D;str, help&#x3D;&quot;src role&quot;)</span><br><span class="line">&#39;-privilege_role&#39;, &#39;--privilege_role&#39;, required&#x3D;False, type&#x3D;str, help&#x3D;&quot;privilege role&quot;)</span><br><span class="line">&#39;-privilege_command&#39;, &#39;--privilege_command&#39;, required&#x3D;False, type&#x3D;str, help&#x3D;&quot;privilege command&quot;)</span><br><span class="line">&#39;-privilege_component&#39;, &#39;--privilege_component&#39;, required&#x3D;False, type&#x3D;str, help&#x3D;&quot;privilege component&quot;)</span><br></pre></td></tr></table></figure>
+<h2 id=""><a href="#" class="headerlink" title=""></a></h2><h2 id="1-部署环境"><a href="#1-部署环境" class="headerlink" title="1. 部署环境"></a>1. 部署环境</h2><p>很重要，作用是配置系统临时目录和变量，关闭占用进程等等</p>
 <p>在云服务器/root/standalone-fate-master-1.4.4 这个文件夹下</p>
-<p>运行</p>
-<ol>
-<li><p> source init.sh init</p>
-</li>
-<li><p> <strong>上传数据</strong></p>
-</li>
-</ol>
+<p>运行 </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">source init.sh init</span><br></pre></td></tr></table></figure>
+<h2 id="2-上传数据"><a href="#2-上传数据" class="headerlink" title="2. 上传数据"></a>2. 上传数据</h2><blockquote>
 <p>通过upload.json文件（upload只是关键词）上传数据（可以是训练数据和验证数据）</p>
+</blockquote>
+<blockquote>
 <p>下面这个命令需要在有upload.json的文件下运行</p>
+</blockquote>
 <p>python fate_flow_client.py -f upload -c examples/upload_guest.json</p>
 <p>python fate_flow_client.py -f upload -c examples/upload_host.json</p>
 <ul>
-<li>  举个例子</li>
+<li>举个例子</li>
 </ul>
-<ol>
-<li><p> {</p>
-</li>
-<li><p> “file”: “examples/data/breast_b.csv”,</p>
-</li>
-<li><p> “head”: 1,</p>
-</li>
-<li><p> “partition”: 10,</p>
-</li>
-<li><p> “work_mode”: 0,</p>
-</li>
-<li><p> “namespace”: “fate_flow_test_breast”,</p>
-</li>
-<li><p> “table_name”: “breast”</p>
-</li>
-<li><p> }</p>
-</li>
-</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  &quot;file&quot;: &quot;examples&#x2F;data&#x2F;breast_b.csv&quot;,</span><br><span class="line">  &quot;head&quot;: 1,</span><br><span class="line">  &quot;partition&quot;: 10,</span><br><span class="line">  &quot;work_mode&quot;: 0,</span><br><span class="line">  &quot;namespace&quot;: &quot;fate_flow_test_breast&quot;,</span><br><span class="line">  &quot;table_name&quot;: &quot;breast&quot;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>需要说明的是，上述“namespace”和“table_name”唯一确定一个Dtable类型的数据表，训练时可以根据这俩选定所需要的数据，“partition”是数据存储分区，据说对大量的数据进行操作时会有明显作用，“workmode”为0（单机），1（多机）</p>
-<ol>
-<li>**数据建模（提交训练任务）<br> **</li>
-</ol>
-<p>训练数据的时候我们需要配置dsl.json文件（模块定义）和conf.json文件（模块配置）</p>
+<h2 id="3-数据建模（提交训练任务）"><a href="#3-数据建模（提交训练任务）" class="headerlink" title="3. 数据建模（提交训练任务）"></a>3. 数据建模（提交训练任务）</h2><p>训练数据的时候我们需要配置dsl.json文件（模块定义）和conf.json文件（模块配置）</p>
 <p>例如：</p>
-<ol>
-<li>python fate_flow_client.py -f submit_job -d<br> examples/test_hetero_lr_job_dsl.json -c<br> examples/test_hetero_lr_job_conf.json</li>
-</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python fate_flow_client.py -f submit_job -d examples&#x2F;test_hetero_lr_job_dsl.json -c examples&#x2F;test_hetero_lr_job_conf.json</span><br></pre></td></tr></table></figure>
 <p>其中更改的dsl.json文件的结果是这样的（下图是已经运行成功的，绿色代表成功，红色代表挂掉）dsl就是定义数据流通的过程，以及经过的模块。</p>
-<p><img src="media/14f4b8f5abef8b75ede59c4c5179c15b.png" alt="Generated"></p>
+<p><img src="https://smarthealth2019.feishu.cn/space/api/box/stream/download/asynccode/?code=OGJjMzEwODZhNDk1NmZiZjE2ZGQyYjZhM2MyMTYyNjBfZlY0R1FtT1JOa0NDS3JhMHc1djcwQXhqSjlTbXdyWXRfVG9rZW46Ym94Y24wNzdCRkN3UVNoTDB2eVUxUVd6OU9lXzE2MTExMzM5ODg6MTYxMTEzNzU4OF9WNA" alt="img"></p>
 <p>上图很多模块可以自行删除，选取有必要的模块即可（当然也可以在数据集上进行修改）</p>
 <p>conf.json文件就是定义里面的一些参数细节</p>
-<p><strong>注：</strong>小白可以根据/root/standalone-fate-master-1.4.4/examples/federatedml-1.x-examples<br>文件夹下的每个模型文件夹里面的README.md文件查看成对的 conf文件和dsl文件</p>
-<p>接下来就可以进入 localhost：8080 这个网址下查看结果了（目前只能查看前100个数据）</p>
+<p><strong>注：</strong>小白可以根据/root/standalone-fate-master-1.4.4/examples/federatedml-1.x-examples 文件夹下的每个模型文件夹里面的README.md文件查看成对的 conf文件和dsl文件</p>
+<p>接下来就可以进入  localhost：8080 这个网址下查看结果了（目前只能查看前100个数据）</p>
 <p>当然也可以通过下面这个命令将数据下载到csv格式文件下</p>
-<ol>
-<li><p>python fate_flow_client.py -f component_output_data -j<br> 2020091017075024965639 -r guest -p 10000 -cpn hetero_nn_0 -o ./</p>
-</li>
-<li><p> #黄色为自定义部分</p>
-</li>
-<li><p> <strong>在线预测</strong></p>
-</li>
-</ol>
-<p>将训练好的模型绑定到某一ID上，这样我们就可以进行在线预测了</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">python fate_flow_client.py -f component_output_data -j 2020091017075024965639 -r guest -p 10000 -cpn hetero_nn_0 -o .&#x2F;</span><br><span class="line">#黄色为自定义部分</span><br></pre></td></tr></table></figure>
+
+
+<h2 id="4-在线预测"><a href="#4-在线预测" class="headerlink" title="4. 在线预测"></a>4. 在线预测</h2><p>将训练好的模型绑定到某一ID上，这样我们就可以进行在线预测了</p>
 <p>顺序：</p>
-<p>加载模型-&gt;绑定模型-&gt;在线预测</p>
-<ol>
-<li><p> 首先修改上传（加载）模型</p>
-</li>
-<li><p> &gt;&gt; vi examples/publish_load_model.json</p>
-</li>
-<li><p> 得到如下</p>
-</li>
-<li><p> {</p>
-</li>
-<li><p> “initiator”: {</p>
-</li>
-<li><p> “party_id”: “9999”,</p>
-</li>
-<li><p> “role”: “guest”</p>
-</li>
-<li><p> },</p>
-</li>
-<li><p> “role”: {</p>
-</li>
-<li><p>“guest”: [“9999”],</p>
-</li>
-<li><p>“host”: [“10000”],</p>
-</li>
-<li><p>“arbiter”: [“10000”]</p>
-</li>
-<li><p>},</p>
-</li>
-<li><p>“job_parameters”: {</p>
-</li>
-<li><p>“work_mode”: 1,</p>
-</li>
-<li><p>“model_id”: “arbiter-10000#guest-9999#host-10000#model”,</p>
-</li>
-<li><p>“model_version”: “202003060553168191842”</p>
-</li>
-<li><p>}</p>
-</li>
-<li><p>}</p>
-</li>
-<li><p>加载模型</p>
-</li>
-<li><p>python fate_flow_client.py -f load -c examples/publish_load_model.json</p>
-</li>
-<li><p> 配置绑定模型</p>
-</li>
-<li><p> &gt;&gt;vi examples/bind_model_service.json</p>
-</li>
-<li><p> 得到如下</p>
-</li>
-<li><p> {</p>
-</li>
-<li><p> “service_id”: “test”,</p>
-</li>
-<li><p> “initiator”: {</p>
-</li>
-<li><p> “party_id”: “9999”,</p>
-</li>
-<li><p> “role”: “guest”</p>
-</li>
-<li><p> },</p>
-</li>
-<li><p>“role”: {</p>
-</li>
-<li><p>“guest”: [“9999”],</p>
-</li>
-<li><p>“host”: [“10000”],</p>
-</li>
-<li><p>“arbiter”: [“10000”]</p>
-</li>
-<li><p>},</p>
-</li>
-<li><p>“job_parameters”: {</p>
-</li>
-<li><p>“work_mode”: 1,</p>
-</li>
-<li><p>“model_id”: “arbiter-10000#guest-9999#host-10000#model”,</p>
-</li>
-<li><p>“model_version”: “202003060553168191842”</p>
-</li>
-<li><p>}</p>
-</li>
-<li><p>}</p>
-</li>
-<li></li>
-<li><p>&gt;&gt;python fate_flow_client.py -f bind -c examples/bind_model_service.json</p>
-</li>
-<li><p>得到</p>
-</li>
-<li><p>{</p>
-</li>
-<li><p>“retcode”: 0,</p>
-</li>
-<li><p>“retmsg”: “service id is test”</p>
-</li>
-<li><p>}</p>
-</li>
-</ol>
+<p>​      加载模型-&gt;绑定模型-&gt;在线预测</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br></pre></td><td class="code"><pre><span class="line">首先修改上传（加载）模型</span><br><span class="line">&gt;&gt;  vi examples&#x2F;publish_load_model.json</span><br><span class="line">得到如下</span><br><span class="line">&#123;</span><br><span class="line">    &quot;initiator&quot;: &#123;</span><br><span class="line">        &quot;party_id&quot;: &quot;9999&quot;,</span><br><span class="line">        &quot;role&quot;: &quot;guest&quot;</span><br><span class="line">    &#125;,</span><br><span class="line">    &quot;role&quot;: &#123;</span><br><span class="line">        &quot;guest&quot;: [&quot;9999&quot;],</span><br><span class="line">        &quot;host&quot;: [&quot;10000&quot;],</span><br><span class="line">        &quot;arbiter&quot;: [&quot;10000&quot;]</span><br><span class="line">    &#125;,</span><br><span class="line">    &quot;job_parameters&quot;: &#123;</span><br><span class="line">        &quot;work_mode&quot;: 1,</span><br><span class="line">        &quot;model_id&quot;: &quot;arbiter-10000#guest-9999#host-10000#model&quot;,</span><br><span class="line">        &quot;model_version&quot;: &quot;202003060553168191842&quot;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">加载模型</span><br><span class="line">python fate_flow_client.py -f load -c examples&#x2F;publish_load_model.json</span><br><span class="line">配置绑定模型</span><br><span class="line">&gt;&gt;vi examples&#x2F;bind_model_service.json</span><br><span class="line">得到如下</span><br><span class="line">&#123;</span><br><span class="line">    &quot;service_id&quot;: &quot;test&quot;,</span><br><span class="line">    &quot;initiator&quot;: &#123;</span><br><span class="line">        &quot;party_id&quot;: &quot;9999&quot;,</span><br><span class="line">        &quot;role&quot;: &quot;guest&quot;</span><br><span class="line">    &#125;,</span><br><span class="line">    &quot;role&quot;: &#123;</span><br><span class="line">        &quot;guest&quot;: [&quot;9999&quot;],</span><br><span class="line">        &quot;host&quot;: [&quot;10000&quot;],</span><br><span class="line">        &quot;arbiter&quot;: [&quot;10000&quot;]</span><br><span class="line">    &#125;,</span><br><span class="line">    &quot;job_parameters&quot;: &#123;</span><br><span class="line">        &quot;work_mode&quot;: 1,</span><br><span class="line">        &quot;model_id&quot;: &quot;arbiter-10000#guest-9999#host-10000#model&quot;,</span><br><span class="line">        &quot;model_version&quot;: &quot;202003060553168191842&quot;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">&gt;&gt;python fate_flow_client.py -f bind -c examples&#x2F;bind_model_service.json</span><br><span class="line">得到</span><br><span class="line">&#123;</span><br><span class="line">    &quot;retcode&quot;: 0,</span><br><span class="line">    &quot;retmsg&quot;: &quot;service id is test&quot;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>然后就是在线预测（ip和端口，以及参数根据自己修改的进行配置即可）</p>
-<ol>
-<li><p>curl -X POST -H ‘Content-Type: application/json’ -i<br> ‘<a target="_blank" rel="noopener" href="http://192.168.7.1:8059/federation/v1/inference&#39;">http://192.168.7.1:8059/federation/v1/inference&#39;</a> –data ‘{</p>
-</li>
-<li><p> “head”: {</p>
-</li>
-<li><p> “serviceId”: “test”</p>
-</li>
-<li><p> },</p>
-</li>
-<li><p> “body”: {</p>
-</li>
-<li><p> “featureData”: {</p>
-</li>
-<li><p> “x0”: 0.254879,</p>
-</li>
-<li><p> “x1”: -1.046633,</p>
-</li>
-<li><p> “x2”: 0.209656,</p>
-</li>
-<li><p>“x3”: 0.074214,</p>
-</li>
-<li><p>“x4”: -0.441366,</p>
-</li>
-<li><p>“x5”: -0.377645,</p>
-</li>
-<li><p>“x6”: -0.485934,</p>
-</li>
-<li><p>“x7”: 0.347072,</p>
-</li>
-<li><p>“x8”: -0.287570,</p>
-</li>
-<li><p>“x9”: -0.733474</p>
-</li>
-<li><p>},</p>
-</li>
-<li><p>“sendToRemoteFeatureData”: {</p>
-</li>
-<li><p>“id”: “123”</p>
-</li>
-<li><p>}</p>
-</li>
-<li><p>}</p>
-</li>
-<li><p>}’</p>
-</li>
-<li><p><strong>集群运行</strong></p>
-</li>
-</ol>
-<p>集群运行同样按照上述步骤进行，不同的是，这次的建模方在guest机（192.168.0.46）上，而不同于单机guest和host在一台机器上。下面简单叙述一下过程</p>
-<ol>
-<li> <strong>上传数据</strong></li>
-</ol>
-<p>分别在<strong>两台机器上进入容器</strong>，然后上传数据，命令如下</p>
-<ol>
-<li><p> 进入容器</p>
-</li>
-<li><p> &gt;&gt;docker exec -it confs-10000_python_1 bash</p>
-</li>
-<li><p> host方上传数据</p>
-</li>
-<li><p> &gt;&gt; python fate_flow_client.py -f upload -c examples/upload_host.json</p>
-</li>
-<li><p> guest方上传数据</p>
-</li>
-<li><p> &gt;&gt; python fate_flow_client.py -f upload -c examples/upload_guest.json</p>
-</li>
-<li><p> <strong>提交任务</strong></p>
-</li>
-</ol>
-<p>在guest方（192.168.0.46）的容器里面（还是之前上传数据的那个容器），找到正确的文件夹，执行如下命令</p>
-<ol>
-<li>python fate_flow_client.py -f submit_job -d<br> examples/test_hetero_lr_job_dsl.json -c<br> examples/test_hetero_lr_job_conf.json</li>
-</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">curl -X POST -H &#39;Content-Type: application&#x2F;json&#39; -i &#39;http:&#x2F;&#x2F;192.168.7.1:8059&#x2F;federation&#x2F;v1&#x2F;inference&#39; --data &#39;&#123;</span><br><span class="line">  &quot;head&quot;: &#123;</span><br><span class="line">    &quot;serviceId&quot;: &quot;test&quot;</span><br><span class="line">  &#125;,</span><br><span class="line">  &quot;body&quot;: &#123;</span><br><span class="line">    &quot;featureData&quot;: &#123;</span><br><span class="line">      &quot;x0&quot;: 0.254879,</span><br><span class="line">      &quot;x1&quot;: -1.046633,</span><br><span class="line">      &quot;x2&quot;: 0.209656,</span><br><span class="line">      &quot;x3&quot;: 0.074214,</span><br><span class="line">      &quot;x4&quot;: -0.441366,</span><br><span class="line">      &quot;x5&quot;: -0.377645,</span><br><span class="line">      &quot;x6&quot;: -0.485934,</span><br><span class="line">      &quot;x7&quot;: 0.347072,</span><br><span class="line">      &quot;x8&quot;: -0.287570,</span><br><span class="line">      &quot;x9&quot;: -0.733474</span><br><span class="line">    &#125;,</span><br><span class="line">    &quot;sendToRemoteFeatureData&quot;: &#123;</span><br><span class="line">      &quot;id&quot;: &quot;123&quot;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;&#39;</span><br></pre></td></tr></table></figure>
+
+
+<h2 id="5-集群运行"><a href="#5-集群运行" class="headerlink" title="5. 集群运行"></a>5. 集群运行</h2><p>集群运行同样按照上述步骤进行，不同的是，这次的建模方在guest机（192.168.0.46）上，而不同于单机guest和host在一台机器上。下面简单叙述一下过程</p>
+<h3 id="1-上传数据"><a href="#1-上传数据" class="headerlink" title="1. 上传数据"></a>1. 上传数据</h3><p>分别在<strong>两台机器上进入容器</strong>，然后上传数据，命令如下</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">进入容器</span><br><span class="line">&gt;&gt;docker exec -it confs-10000_python_1 bash</span><br><span class="line">host方上传数据</span><br><span class="line">&gt;&gt; python fate_flow_client.py -f upload -c examples&#x2F;upload_host.json</span><br><span class="line">guest方上传数据</span><br><span class="line">&gt;&gt; python fate_flow_client.py -f upload -c examples&#x2F;upload_guest.json</span><br></pre></td></tr></table></figure>
+
+
+<h3 id="2-提交任务"><a href="#2-提交任务" class="headerlink" title="2. 提交任务"></a>2. 提交任务</h3><p>在guest方（192.168.0.46）的容器里面（还是之前上传数据的那个容器），找到正确的文件夹，执行如下命令</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python fate_flow_client.py -f submit_job -d examples&#x2F;test_hetero_lr_job_dsl.json -c examples&#x2F;test_hetero_lr_job_conf.json</span><br></pre></td></tr></table></figure>
 <p>这个时候，打开guest方的localhost：8080网页就可以查看结果了，在host方是看不到结果的哦！</p>
 <p>剩下的就是在线推理，大同小异，注意role id就可以了</p>
-<p>**四、FATE开发<br>**</p>
+<h1 id="四、FATE开发"><a href="#四、FATE开发" class="headerlink" title="四、FATE开发"></a>四、FATE开发</h1><blockquote>
 <p>除了命令行界面，fate还提供了很多可以开发的接口</p>
+</blockquote>
+<blockquote>
 <p>想要进一步对FATE进行应用和开发，就要了解FATE一些必要的结构</p>
-<p><img src="media/e9e89c4cb44e93c9ef3c4ea282a509aa.png" alt="Generated"></p>
+</blockquote>
+<p><img src="https://smarthealth2019.feishu.cn/space/api/box/stream/download/asynccode/?code=ODk3ZTkwZDU5M2M5ZmMxMDhjMjdkMTQxYTYyYjExNzRfSk5sV0xnN09tSmxqQ2paTEVDNTVsSmlRQ21UUDVobUdfVG9rZW46Ym94Y256aW5hZllZeXhjWVB4SWJYQ1pIaGVoXzE2MTExMzM5ODg6MTYxMTEzNzU4OF9WNA" alt="img"></p>
 <ul>
-<li>**DSL文件定义<br>  **</li>
+<li><h4 id="DSL文件定义"><a href="#DSL文件定义" class="headerlink" title="DSL文件定义"></a>DSL文件定义</h4></li>
 </ul>
-<p><img src="media/ab2eb534c4a6a3eadffcdffb8a5df100.png" alt="Generated"></p>
+<p><img src="https://smarthealth2019.feishu.cn/space/api/box/stream/download/asynccode/?code=MjlhMWVjZDE1MWJlOWUyMzkxMGZiNmI3M2NhNDYyOWNfQnA5SGx4T1ozbjBSVEVNOElUM0kxSktqTkJ1REk2RHJfVG9rZW46Ym94Y25WZFJCeHVtQVRhb1lQVlEySENKVUJiXzE2MTExMzM5ODg6MTYxMTEzNzU4OF9WNA" alt="img"></p>
 <p>例如，打开其中一个json文件</p>
-<p><img src="media/ace08d7d4f16fb5338b32ceeac40b3c6.png" alt="Generated"></p>
+<p><img src="https://smarthealth2019.feishu.cn/space/api/box/stream/download/asynccode/?code=ZDI3YzcyZWI0NDM1OWM0NDMzMTFiNTIwZTJhMGRjY2FfWGRuWk1Cc3dFNk45ekFKSHFmd2pTekhSRHNKdlhuUDJfVG9rZW46Ym94Y25vajJ0Z0RMVWx1NGt1MVhEQ0xleFZnXzE2MTExMzM5ODg6MTYxMTEzNzU4OF9WNA" alt="img"></p>
 <p>dsl文件配置</p>
-<p><img src="media/2a43343080e67a5e9272394e3eab0eb5.png" alt="Generated"></p>
+<p><img src="https://smarthealth2019.feishu.cn/space/api/box/stream/download/asynccode/?code=ZWM2ODY1MTQ1MjM5ZWVjNjRlYzNkNGUyZTg5ZGQzOTJfSmlWQk1RSzV2U2NMTHVST2p3NnRtWnlnSEJmTGgyUVpfVG9rZW46Ym94Y25TN2xEbUhYc2QzOXR4b3JyMEc4UWplXzE2MTExMzM5ODg6MTYxMTEzNzU4OF9WNA" alt="img"></p>
 <ul>
-<li>  <strong>参数调节</strong></li>
+<li><h4 id="参数调节"><a href="#参数调节" class="headerlink" title="参数调节"></a>参数调节</h4></li>
 </ul>
 <p>你可能会问，我们有哪些可以用到的参数呢？</p>
 <p>无论是模型的参数（神经元数目，学习率等）还是模块用到的参数（conf文件定义了dsl文件的参数），或者fate框架自身的参数，都在federatedml/param文件夹下，这些供框架开发者使用，当然官方的文档已经提到都有哪些可以使用的超参数，而且非常详细，完全够“调参侠”使用了</p>
 <ul>
-<li>  <strong>conf文件调试</strong></li>
+<li><h4 id="conf文件调试"><a href="#conf文件调试" class="headerlink" title="conf文件调试"></a>conf文件调试</h4></li>
 </ul>
-<p><img src="media/f7ffb47afaa259d633f6c96d80bd3daa.png" alt="Generated"></p>
-<p><img src="media/61f06e728fdb6ebbfefac81abdaff496.png" alt="Generated"></p>
+<p><img src="https://smarthealth2019.feishu.cn/space/api/box/stream/download/asynccode/?code=MDJlODE2OTI1YWNkYjViMmQ4YTI4MDVlNzVjYjNmNGNfQmR6eEI0T01tc2FiQUVKNFY1eUI5NnYzN1JMSzBaMzdfVG9rZW46Ym94Y25obmtjeGpMY0FBSHBWS3NoVEJPVW5oXzE2MTExMzM5ODg6MTYxMTEzNzU4OF9WNA" alt="img"></p>
+<p><img src="https://smarthealth2019.feishu.cn/space/api/box/stream/download/asynccode/?code=NGM2MTljOWVlNDQ1NTNiMmMyOThkYWUwMzNmM2E1ZDdfaFdNckJ2MWpVcDFrVld5ZlQxeEJaZlRiamUxNGF5eHdfVG9rZW46Ym94Y25sWWF0OTI0NGJoQW9oT0xreHJwT3FoXzE2MTExMzM5ODg6MTYxMTEzNzU4OF9WNA" alt="img"></p>
 <p>模型公用的可调参数</p>
-<p><img src="media/d384f55b6a1ea9b55c27bdc2aacb5d14.png" alt="Generated"></p>
+<p><img src="https://smarthealth2019.feishu.cn/space/api/box/stream/download/asynccode/?code=MDlkMzZiZDk5YzE4Yzg4MzcyMDMwMTNiYTFlODM2NDZfMzRwZkFDNnFMODdaakVzcXVKd0poSmpRVnJId0VZOHdfVG9rZW46Ym94Y24xckFEQ3NjYjg4UFJHTDhtTTFEZUNlXzE2MTExMzM5ODg6MTYxMTEzNzU4OF9WNA" alt="img"></p>
 <p>待补充。。。</p>
-<p>**五、鸣谢<br>**</p>
-<p>谢天谢地谢王静and医疗部门所有同事，祝大家身体健康万事如意</p>
-<p><strong>FAQ</strong></p>
-<p>联系我： 飞鸽传书</p>
+<h1 id="五、鸣谢"><a href="#五、鸣谢" class="headerlink" title="五、鸣谢"></a>五、鸣谢</h1><p>谢天谢地谢王静and医疗部门所有同事，祝大家身体健康万事如意</p>
+<h1 id="FAQ"><a href="#FAQ" class="headerlink" title="FAQ"></a>FAQ</h1><p>联系我： 飞鸽传书</p>
 <p>文档编写于FATE1.4.4版本，1.5版本之后大变革本文档爱莫能助(灬ꈍ ꈍ灬)</p>
 
         
